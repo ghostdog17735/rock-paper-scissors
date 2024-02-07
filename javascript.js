@@ -1,15 +1,17 @@
 function getComputerChoice(){
+	const option = ["ROCK", "ROCK", "ROCK", "PAPER", "PAPER", "PAPER", "SCISSOR", "SCISSOR", "SCISSOR"];
 	let random = Math.floor(Math.random()*10) +1;
 	if (random == 10){
 		random = 9;
 	};
-	if (random >= 1 && random <= 3){
+	return option[random];
+	/*if (random >= 1 && random <= 3){
 		return "ROCK";
 	} else if (random >= 4 && random <= 6){
 		return "PAPER";
 	} else {
 		return "SCISSOR";
-	};
+	};*/
 }
 
 function playRound(computerSelection, playerSelection){
